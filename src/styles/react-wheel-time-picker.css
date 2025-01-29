@@ -196,7 +196,7 @@ input:focus {
 .react-wheel-time-picker-btn {
   padding: 10px 15px;
   font-size: 14px;
-  transition: all 150ms linear;
+  transition: all 50ms linear;
   font-weight: 500;
   z-index: 1;
 }
