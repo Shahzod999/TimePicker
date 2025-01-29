@@ -178,10 +178,10 @@ input:focus {
   padding: 0 10px;
 }
 
-.react-wheel-time-picker-cell-inner-hour:active,
-.react-wheel-time-picker-cell-inner-minute:active,
-.react-wheel-time-picker-cell-inner-hour-format:active {
-  background-color: #ff9d0ac9;
+.react-wheel-time-picker-cell-inner-hour:hover,
+.react-wheel-time-picker-cell-inner-minute:hover,
+.react-wheel-time-picker-cell-inner-hour-format:hover {
+  background-color: rgba(211, 211, 211, 0.827);
   color: white;
 }
 
@@ -201,7 +201,7 @@ input:focus {
   z-index: 1;
 }
 
-.react-wheel-time-picker-btn:active {
+.react-wheel-time-picker-btn:hover {
   opacity: 0.6;
 }
 
