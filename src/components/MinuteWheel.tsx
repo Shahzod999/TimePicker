@@ -144,7 +144,7 @@ function MinuteWheel({
             (120 / (dragEndTime - dragStartTime)) * 100;
         }
         let finalValue = Math.round(currentValue! / height) * height;
-        if (finalValue < height * -177) finalValue = height * -177;
+        if (finalValue < height * -57) finalValue = height * -57;
         if (finalValue > height * 2) finalValue = height * 2;
 
         mainListRef.current!.style.transform = `translateY(${finalValue}px)`;
@@ -152,7 +152,7 @@ function MinuteWheel({
       }
       if (dragEndTime - dragStartTime > 100 && cursorPosition !== 0) {
         let finalValue = Math.round(+currentTranslatedValue / height) * height;
-        if (finalValue < height * -177) finalValue = height * -177;
+        if (finalValue < height * -57) finalValue = height * -57;
         if (finalValue > height * 2) finalValue = height * 2;
         mainListRef.current!.style.transform = `translateY(${finalValue}px)`;
         setCurrentTranslatedValue(finalValue);

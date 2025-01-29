@@ -146,7 +146,7 @@ function HourWheel({
         }
         let finalValue = Math.round(currentValue! / height) * height;
 
-        if (finalValue < height * -69) finalValue = height * -69;
+        if (finalValue < height * -21) finalValue = height * -21;
         if (finalValue > height * 2) finalValue = height * 2;
 
         mainListRef.current!.style.transform = `translateY(${finalValue}px)`;
@@ -155,7 +155,7 @@ function HourWheel({
       if (dragEndTime - dragStartTime > 100 && cursorPosition !== 0) {
         let finalValue = Math.round(currentTranslatedValue / height) * height;
 
-        if (finalValue < height * -69) finalValue = height * -69;
+        if (finalValue < height * -21) finalValue = height * -21;
         if (finalValue > height * 2) finalValue = height * 2;
 
         mainListRef.current!.style.transform = `translateY(${finalValue}px)`;
