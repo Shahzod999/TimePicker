@@ -4,10 +4,10 @@ import MinuteWheel from "./MinuteWheel";
 
 function TimePickerSelection({
   initialValue,
-  // onChange,
+  onChange,
   height,
-  // onSave,
-  // onCancel,
+  onSave,
+  onCancel,
   seperator,
   isDarkMode,
 }: {
@@ -43,17 +43,17 @@ function TimePickerSelection({
     isDarkMode,
   };
 
-  // const handleSave = () => {
-  //   const finalSelectedValue = value;
-  //   if (finalSelectedValue) {
-  //     onChange(finalSelectedValue);
-  //     onSave(finalSelectedValue);
-  //   }
-  // };
+  const handleSave = () => {
+    const finalSelectedValue = value;
+    if (finalSelectedValue) {
+      onChange(finalSelectedValue);
+      onSave(finalSelectedValue);
+    }
+  };
 
-  // const handleCancel = () => {
-  //   onCancel();
-  // };
+  const handleCancel = () => {
+    onCancel();
+  };
 
   return (
     <div className="react-wheel-time-picker  react-wheel-time-picker-transition">

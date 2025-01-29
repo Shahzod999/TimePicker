@@ -1,4 +1,4 @@
-import TimePicker from "../../timer/src/components/TimePicker";
+import TimePicker from "./components/TimePicker";
 
 function App() {
   const handleTimeChange = (time: string) => {
